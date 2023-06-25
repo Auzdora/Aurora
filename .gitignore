@@ -1,0 +1,4 @@
+Notion_DB/
+__pycache__/
+index.faiss
+index.pkl
