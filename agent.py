@@ -30,7 +30,7 @@ class SuperAgent:
             self.vector_db = self.data_dumper.get_vector_db()
 
         # initialize chatgpt
-        self.chatgpt = ChatOpenAI(model="gpt-3.5-turbo-0613", 
+        self.chatgpt = ChatOpenAI(model=self.configer.config["system"]["model"], 
                  openai_api_key=OPENAI_API_KEY,
                  openai_api_base=OPENAI_API_BASE,
                  streaming=True,

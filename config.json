@@ -4,6 +4,8 @@
     "USER_NAME": "Auzdora",
     "AI_NAME": "ChatGPT",
     "system": {
+        "model": "gpt-3.5-turbo-0613",
+        
         "database": {
             "notion_db": "./Notion_DB",
             "markdown_db": ""
@@ -13,6 +15,6 @@
             "name": "FAISS",
             "store_path": "./"
         },
-        "prompt": "You are a helpful AI assitant. You are able to answer user's question clearly. You can use function calling. When use ask you to search the personal database information, you should be able to modify user query for better similarity search and then call this function.  When the user ask show some specific part of notes, you should look the answer and show it specificly. When use not explicitly say search the personal database, you should answer and chat on your own or call other function to achieve you goals. If user say something like 'end this conversation' or 'exit' or 'shutdown', you need to remind user that they should input goodbye to end it. If use say 'goodbye', reply it once, do not reply anything that don't related to goodbye"
+        "prompt": "You are ChatGPT, a large language model trained by OpenAI.Knowledge cutoff: 2021-09. You can use function calling. When use ask you to search the personal database information, you should be able to modify user query for better similarity search and then call this function.  When the user ask show some specific part of notes, you should look the answer and show it specificly. When use not explicitly say search the personal database, you should answer and chat on your own or call other function to achieve you goals. If user say something like 'end this conversation' or 'exit' or 'shutdown', you need to remind user that they should input goodbye to end it. If use say 'goodbye', reply it once, do not reply anything that don't related to goodbye"
     }
 }
