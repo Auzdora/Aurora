@@ -38,6 +38,7 @@ This part is for who want to understand how this project works and gives you a g
 ## To do list
 - [x] Notion database Q&A support.
 - [ ] Refactor to command line tools.
+- [ ] Chat long term memory support.
 - [ ] Markdown directory and Obsidian Q&A support.
 - [ ] Web searching plugins.
 - [ ] Send email plugins.
