@@ -16,7 +16,7 @@ If you don't interested in reading this repo and just want to use it, you could 
 - **Config project**: In the root directory, find the file called `config.json` which gives you a interface to change system settings.
 - **Get API Key**: Create a ChatGPT account and get its API key. If you have trouble with your own API (can't pay, connect issue, etc, please refer to [OhMyGPT](https://www.ohmygpt.com/) for accessing GPT's API).
 - **Set API Key**: Fill your API key and base into `config.json`.
-    ```json
+    ```txt
     "OPEN_AI_API": "xxxx",
     "OPEN_AI_BASE": "https://xxxx",
     // If you'er using OnMyGPT API, you OPEN_AI_BASE is https://api.ohmygpt.com/v1
@@ -30,6 +30,8 @@ If you don't interested in reading this repo and just want to use it, you could 
 ## Architecture
 🚧 **(Building...)** 🚧
 This part is for who want to understand how this project works and gives you a generally picture of it.
+
+The main component of Personal-GPT is Agent. Agent is a unit where recieve you message and schedule the whole proccess. The most important interface of it is `chat()`.
 
 ## Feature
 - Access your notion database for Q&A.
