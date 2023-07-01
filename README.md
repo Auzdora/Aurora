@@ -1,47 +1,52 @@
 # Personal-GPT
-**Personal-GPT** is an open source project which can connects to your own local knowledge database and multiple plugins with LLM. You can try to unleash the potential power of function calling and your personal data. Its an experiment project that try to combine both LLM capability and function calling. Feel free to change and reuse the code!
 
+**Personal-GPT** is an open-source project designed to connect to your local knowledge database and interact with multiple plugins using Long Life Memory (LLM). This project is an exciting experiment exploring the integration of LLM capabilities and function calling. All coders are welcome to modify and repurpose the code!
 
-**Personal-GPT** is built by 🦜️🔗 [langchain](https://github.com/hwchase17/langchain) framework, you can learn some basic concepts in their [docs](https://python.langchain.com/docs/get_started/introduction.html).
+**Personal-GPT** was developed using the 🦜️🔗 [langchain](https://github.com/hwchase17/langchain) framework. For beginners, you can familiarize yourself with some fundamental concepts in their [documentation](https://python.langchain.com/docs/get_started/introduction.html).
 
+Currently, we are molding **Personal-GPT** to function as a command-line tool, but stay tuned for potential web or app interfaces in the future!
 
-In current version, I'm building it towards to a command line tools. Maybe add a web or app interface in the future.
-## How to start?
-If you don't interested in reading this repo and just want to use it, you could follow in following steps to make use of features supported by this project.
-- **Clone project**: Clone this repo running the following command in your terminal
+## Getting Started
+For those of you who want to dive right in, here are some simple steps to get started with the features provided by this project:
+
+- **Clone the Project**: Clone this repository by executing the following command in your terminal:
     ```bash
     git clone https://github.com/Auzdora/Personal-GPT.git
     ```
-- **Open project**: Once you had this repo in your project, open its directory or in VSCode.
-- **Config project**: In the root directory, find the file called `config.json` which gives you a interface to change system settings.
-- **Get API Key**: Create a ChatGPT account and get its API key. If you have trouble with your own API (can't pay, connect issue, etc, please refer to [OhMyGPT](https://www.ohmygpt.com/) for accessing GPT's API).
-- **Set API Key**: Fill your API key and base into `config.json`.
+- **Open the Project**: Navigate to the project's directory, or open it in VSCode.
+
+- **Configure the Project**: In the root directory, locate the `config.json` file. This is where you can modify system settings.
+
+- **Acquire an API Key**: Sign up for a ChatGPT account to get your API key. If you encounter issues (payment troubles, connectivity, etc.), visit [OhMyGPT](https://www.ohmygpt.com/) to access the GPT's API.
+
+- **Set your API Key**: Input your API key and base into the `config.json` file as shown below:
     ```txt
     "OPEN_AI_API": "xxxx",
     "OPEN_AI_BASE": "https://xxxx",
-    // If you'er using OnMyGPT API, you OPEN_AI_BASE is https://api.ohmygpt.com/v1
+    // For OhMyGPT API users, your OPEN_AI_BASE is https://api.ohmygpt.com/v1
     ```
-- **Dump your database**: You can now choose which database you want to dump. You can also dump as many as you want.
-  1. **Notion**: This project supports you ask questions about your notion database. Jump [here]() for further information.
-  2. **Markdown directory**: 🚧 **(Building...)** 🚧 It supports accessing you computer's local directory. 
-  3. **Obsidian**: 🚧 **(Building...)** 🚧 Obsidian is a localized personal database. You can treat it as a markdown directory.
+- **Populate your Database**: You're all set to select and populate your preferred database(s).
 
+  1. **Notion**: This project allows you to query your Notion database. See [here]() for additional information.
+  2. **Markdown directory**: 🚧 **(Under Construction...)** 🚧 This feature will enable access to your local directories.
+  3. **Obsidian**: 🚧 **(Under Construction...)** 🚧 Obsidian is a local personal database and can be considered as a markdown directory.
 
 ## Architecture
-🚧 **(Building...)** 🚧
-This part is for who want to understand how this project works and gives you a generally picture of it.
+🚧 **(Under Construction...)** 🚧
 
-The main component of Personal-GPT is Agent. Agent is a unit where recieve you message and schedule the whole proccess. The most important interface of it is `chat()`.
+For those interested in the inner workings of this project, this section provides a high-level overview.
 
-## Feature
-- Access your notion database for Q&A.
-- Access your markdown directory and Obsidian for Q&A.
+The primary component of Personal-GPT is the Agent, which receives your messages and orchestrates the process. Its primary method is `chat()`.
 
-## To do list
+## Features
+- Query your Notion database.
+- Access and interact with your Markdown directory and Obsidian.
+
+## To-Do List
 - [x] Notion database Q&A support.
-- [ ] Refactor to command line tools.
-- [ ] Chat long term memory support.
+- [ ] Refactor as a command-line tool.
+- [ ] Implement Chat Long Term Memory support.
 - [ ] Markdown directory and Obsidian Q&A support.
-- [ ] Web searching plugins.
-- [ ] Send email plugins.
-- [ ] ...
+- [ ] Web search plugin.
+- [ ] Email plugin.
+- [ ] And more...
