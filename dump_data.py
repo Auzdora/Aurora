@@ -13,9 +13,14 @@ text_spliter = RecursiveCharacterTextSplitter(
 )
 
 class DataDumper:
-    """Dump your personal data into the vector database to store and retrieve
+    """
+    DataDumper is a class that dump data from database to local, and load data from local to database.
     """
     def __init__(self, config_loader: ConfigLoader) -> None:
+        """
+        Args:
+            config_loader (ConfigLoader): config loader
+        """
         self.OPEN_AI_KEY = config_loader.get_api_key()
         self.OPEN_AI_BASE = config_loader.get_api_base()
         self.config_loader = config_loader
@@ -60,15 +65,13 @@ class DataDumper:
         self.store_path = self.config_loader.config["system"]["vector_db"]["store_path"]
 
     def dump_vector_db(self, vector_db):
+        """
+        dump vector db to local
+        """
         vector_db.save_local("./")
     
     def get_vector_db(self) -> FAISS:
+        """
+        load vector db from local
+        """
         return FAISS.load_local(self.store_path, embeddings=self.embedding_model)
-
-if __name__ == "__main__":
-    loader = ConfigLoader()
-    per = DataDumper(loader)
-    db = per.get_vector_db()
-    query = "what is file system"
-    docs = db.similarity_search(query)
-    print(docs[0].page_content)
