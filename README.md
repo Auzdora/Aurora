@@ -1,6 +1,6 @@
 # Aurora
 ![](aurora.png)
-<p style="font-size: 10px; text-align: right;">Photo by <a href="https://unsplash.com/@heitmannj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henrik Heitmann</a> on <a href="https://unsplash.com/photos/wQ1UIvNfgYQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+*Photo by <a href="https://unsplash.com/@heitmannj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henrik Heitmann</a> on <a href="https://unsplash.com/photos/wQ1UIvNfgYQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*
 
 **Aurora** is an open-source project designed to connect to your local knowledge database and interact with multiple plugins using Long Life Memory (LLM). This project is an exciting experiment exploring the integration of LLM capabilities and function calling. All coders are welcome to modify and repurpose the code!
 
