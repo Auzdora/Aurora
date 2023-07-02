@@ -1,10 +1,12 @@
-# Personal-GPT
+# Aurora
+![](aurora.png)
 
-**Personal-GPT** is an open-source project designed to connect to your local knowledge database and interact with multiple plugins using Long Life Memory (LLM). This project is an exciting experiment exploring the integration of LLM capabilities and function calling. All coders are welcome to modify and repurpose the code!
 
-**Personal-GPT** was developed using the 🦜️🔗 [langchain](https://github.com/hwchase17/langchain) framework. For beginners, you can familiarize yourself with some fundamental concepts in their [documentation](https://python.langchain.com/docs/get_started/introduction.html).
+**Aurora** is an open-source project designed to connect to your local knowledge database and interact with multiple plugins using Long Life Memory (LLM). This project is an exciting experiment exploring the integration of LLM capabilities and function calling. All coders are welcome to modify and repurpose the code!
 
-Currently, we are molding **Personal-GPT** to function as a command-line tool, but stay tuned for potential web or app interfaces in the future!
+**Aurora** was developed using the 🦜️🔗 [langchain](https://github.com/hwchase17/langchain) framework. For beginners, you can familiarize yourself with some fundamental concepts in their [documentation](https://python.langchain.com/docs/get_started/introduction.html).
+
+Currently, we are molding **Aurora** to function as a command-line tool, but stay tuned for potential web or app interfaces in the future!
 
 ## Getting Started
 For those of you who want to dive right in, here are some simple steps to get started with the features provided by this project:
@@ -36,7 +38,7 @@ For those of you who want to dive right in, here are some simple steps to get st
 
 For those interested in the inner workings of this project, this section provides a high-level overview.
 
-The primary component of Personal-GPT is the Agent, which receives your messages and orchestrates the process. Its primary method is `chat()`.
+The primary component of Aurora is the Agent, which receives your messages and orchestrates the process. Its primary method is `chat()`.
 
 ## Features
 - Query your Notion database.
