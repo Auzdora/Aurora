@@ -24,6 +24,8 @@ class BasePlugin:
         pass
     
     def format_function(self) -> Dict:
+        """return the formatted function dict
+        """
         function = {
             "name": self.get_name(),
             "description": self.get_description(),
